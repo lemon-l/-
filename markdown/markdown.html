@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>markdown!!!!!</title>
+    <style>
+        .position {
+            float: left;
+            width: 350px;
+            height: 500px;
+        }
+
+        #left {
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        #center {
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        #right {
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+
+        pre {
+            color: blue;
+            font-size: 15px;
+        }
+
+        #getfile {
+            overflow: scroll;
+        }
+
+        #aftChange {
+            overflow: scroll;
+        }
+
+        .middle {
+            margin-top: 125px;
+        }
+
+        span {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="left" class="position">
+        <input type="file" id="file" />
+        <span>First:</span><input type="button" id="readfile" value="读取文件" />
+        <pre id="getfile">
+var file = document.getElementById('file').files[0];
+var oBtn1 = document.getElementById('readfile');
+var oBtn2 = document.getElementById('change');
+var oBtn3 = document.getElementById('download');
+var getFile = document.getElementById('getfile');
+var aftChange = document.getElementById('aftChange');
+oBtn1.onclick = function () {
+var reader = new FileReader();
+reader.readAsText(file);
+reader.onload = function () {
+var fileContent = this.result;
+getFile.innerHTML = fileContent;
+oBtn2.onclick;
+oBtn3.onclick;
+}
+        </pre>
+    </div>
+    <div id="center" class="position">
+        <span>Second:</span><input type="button" value="转换" id="change" class="middle" />
+        <pre id="aftChange">
+oBtn2.onclick = function () {
+console.log(fileContent);
+var imgLink = /!(\[.*\])\((.*)\)/gi;   
+var hyperLink = /\[(.*)\]\((.*)\)/gi;
+fileContent = fileContent.replace(imgLink, "<br/><img src='$2' alt='picture'><br/>");     //替换符合正则表达式的内容      
+fileContent = fileContent.replace(hyperLink, "<h2><a herf ='$2' target = '_blank'>$1</a></h2>");
+aftChange.innerHTML = fileContent;
+console.log(getFile.innerHTML);
+}            
+        </pre>
+    </div>
+    <div id="right" class="position">
+        <span>Third:</span><input type="button" value="下载" id="download" class="middle" />
+        <pre>
+oBtn3.onclick = function () {            
+var funDownload = function (content, filename) {
+var eleLink = document.createElement('a');
+eleLink.download = filename;
+eleLink.style.display = 'none';
+var blob = new Blob([content]);
+eleLink.href = URL.createObjectURL(blob);
+document.body.appendChild(eleLink);
+eleLink.click();
+document.body.removeChild(eleLink);
+};
+funDownload(fileContent,'test.html');
+}        
+        </pre>
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            alert('参考链接：https://www.cnblogs.com/hhhyaaon/p/5929492.html；http://www.zhangxinxu.com/wordpress/2017/07/js-text-string-download-as-html-json-file/;https://taoyouyou.gitee.io/');
+            var file = document.getElementById('file').files[0];  //选择一个文件
+            var oBtn1 = document.getElementById('readfile');
+            var oBtn2 = document.getElementById('change');
+            var oBtn3 = document.getElementById('download');
+            var getFile = document.getElementById('getfile');
+            var aftChange = document.getElementById('aftChange');
+            oBtn1.onclick = function () {
+                var reader = new FileReader();     ////读取本地文件，以utf-8编码方式输出
+                reader.readAsText(file, 'utf-8');
+                reader.onload = function () {     // onload 回调函数是在异步请求加载完成后所执行的函数
+                    var fileContent = reader.result;   //为读取到的内容附一个变量
+                    getFile.innerHTML = fileContent;
+                    oBtn2.onclick = function () {
+                        console.log(fileContent);
+                        var imgLink = /!(\[.*\])\((.*)\)/gi;    //markdown中图片对应的正则表达式
+                        var hyperLink = /\[(.*)\]\((.*)\)/gi;   //markdown中超链接对应的正则表达式
+                        fileContent = fileContent.replace(imgLink, "<img src='$2' alt='picture'>");     //替换符合正则表达式的内容      
+                        fileContent = fileContent.replace(hyperLink, "<h2><a herf ='$2' target = '_blank'>$1</a></h2>");
+                        aftChange.innerHTML = fileContent;
+                        // 下载文件方法, 借助HTML5 Blob实现文本信息文件下载
+                        console.log(fileContent)
+                        var funDownload = function (content, filename) {
+                            var eleLink = document.createElement('a');
+                            eleLink.download = filename;
+                            eleLink.style.display = 'none';
+                            // 字符内容转变成blob地址
+                            var blob = new Blob([content]);
+                            eleLink.href = URL.createObjectURL(blob);
+                            // 触发点击
+                            document.body.appendChild(eleLink);
+                            eleLink.click();
+                            // 然后移除
+                            document.body.removeChild(eleLink);
+                        };
+                        if ('download' in document.createElement('a')) {
+                            // 作为test.html文件下载
+                            oBtn3.addEventListener('click', function () {
+                                alert(fileContent);
+                                funDownload(fileContent, 'test.html');
+                            });
+                        } else {
+                            oBtn3.onclick = function () {
+                                alert('浏览器不支持');
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
