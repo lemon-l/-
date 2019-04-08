@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Visual Studio IDE</title>
+    <link rel="stylesheet" type="text/css" href="vs.css">
+</head>
+
+<body>
+    <div id="header_search">
+        <input type="text" id="text" placeholder="Search">
+        <img src="img/find.png" id="search_img2" width="20px" height="20px">
+        <button type="button" id="search_button">取消</button>
+    </div>
+    <div id="tab">
+        <p id="tab_content">Feedback</p>
+    </div>
+    <div id="header">
+        <div id="header_img">
+            <img src="img/RE1Mu3b.png" width="100px" height="20px">
+        </div>
+        <div id="main_nav">
+            <div id="header_line"></div>
+            <div id="header_title">
+                <a href="https://visualstudio.microsoft.com/" target="_blank">Visual Studio</a>
+            </div>
+            <div id="nav1">
+                <button type="button" class="button">
+                    <a href="https://visualstudio.microsoft.com/vs/">Visual Studio IDE</a>
+                </button>
+                <button type="button" class="button" id="btn3">功能
+                    <img src="img/submenuLOGO.jpg" width="8px" height="5px">
+                </button>
+                <div id="button_menu1">
+                    <ul id="button_menu1_ul1">
+                        <li class="button_menu1">功能</li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/ide/">开发</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/debugging-and-diagnostics/">Debug</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/testing-tools/">测试</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/collaborate/">协作</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/extend/">扩展</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/features/">所有功能</a></li>
+                    </ul>
+                    <ul>
+                        <li class="button_menu1">解决方案</li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/mobile-app-development/">移动</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/azure-tools/">Azure</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/modern-web-tooling/">Web</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/windows-apps-games/">Windows</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/game-development/">游戏</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/features/">所有解决方案</a></li>
+                    </ul>
+                    <ul>
+                        <li class="button_menu1">技术</li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/net-development/">.NET</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/python/">Python</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/node-js/">Node.js</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/rtvs/">R</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/cplusplus/">C++</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/features/">所有技术</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="button" id="btn4">产品/服务
+                    <img src="img/submenuLOGO.jpg" width="8px" height="5px">
+                </button>
+                <div id="button_menu2">
+                    <ul>
+                        <li><a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio Community</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/professional/">Visual Studio Professional</a>
+                        </li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/enterprise/">Visual Studio Enterprise</a>
+                        </li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/compare/">比较产品</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/pricing/">定价</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="button">
+                    <a href="https://visualstudio.microsoft.com/downloads/">下载</a>
+                </button>
+                <button type="button" class="button" id="btn5">支持
+                    <img src="img/submenuLOGO.jpg" width="8px" height="5px;">
+                </button>
+                <div id="button_menu3">
+                    <ul>
+                        <li><a href="https://visualstudio.microsoft.com/vs/support/">获得支持</a></li>
+                        <li><a href="https://visualstudio.microsoft.com/vs/getting-started/">开始使用</a></li>
+                        <li><a href="https://blogs.msdn.microsoft.com/visualstudio/"></a>博客</li>
+                    </ul>
+                </div>
+                <button type="button" class="button">
+                    <a href="https://msdn.microsoft.com/subscriptions/manage/hh442900">阅读者访问</a>
+                </button>
+                <div id="nav1_div">
+                    <button type="button" class="button">
+                        <a href="https://visualstudio.microsoft.com/free-developer-offers/">免费Visual studio</a>
+                    </button>
+                </div>
+                <div id="nav1_div_border"></div>
+            </div>
+            <div id="nav2">
+                <button type="button" class="button" id="btn6">所有microsoft
+                    <img src="img/submenuLOGO.jpg" width="8px" height="5px">
+                </button>
+                <div id="nav2_menu1">
+                    <ul>
+                        <li><a href="https://www.microsoft.com/zh-cn/microsoft-365">Microsoft</a></li>
+                        <li><a href="https://azure.microsoft.com/zh-cn/">Azure</a></li>
+                        <li><a href="https://products.office.com/zh-cn/business/office">office 365</a></li>
+                        <li><a href="https://dynamics.microsoft.com/zh-cn/">Dynamics 365</a></li>
+                        <li><a href="https://www.microsoft.com/sql-server/">SQL</a></li>
+                        <li><a href="https://www.microsoft.com/zh-cn/windowsforbusiness">Windows 10</a></li>
+                    </ul>
+                    <div id="nav2_menu1_line"></div>
+                </div>
+                <div id="nav2_menu2">
+                    <div id="nav2_menu2_content">
+                        <ul>
+                            <li class="nav2_menu2_submenu">产品与服务</li>
+                            <li><a href="https://www.microsoft.com/cloud-platform/windows-server">Windows Server</a>
+                            </li>
+                            <li><a
+                                    href="https://www.microsoft.com/cloud-platform/enterprise-mobility-security">企业移动性+安全性</a>
+                            </li>
+                            <li><a href="https://powerbi.microsoft.com/zh-cn/">Power BI</a></li>
+                            <li><a href="https://products.office.com/zh-cn/microsoft-teams/group-chat-software"></a>团队
+                            </li>
+                            <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a></li>
+                            <li><a href="https://www.microsoft.com/zh-cn/surface/business/overview">Surfuce for
+                                    Business</a></li>
+                        </ul>
+                        <ul>
+                            <li class="nav2_menu2_submenu">新兴技术</li>
+                            <li><a href="https://www.microsoft.com/ai/">人工智能</a></li>
+                            <li><a href="https://www.microsoft.com/internet-of-things/">物联网</a></li>
+                            <li><a href="https://azure.microsoft.com/services/cognitive-services/">认知服务</a></li>
+                            <li><a href="https://www.microsoft.com/quantum/">Quantum</a></li>
+                            <li><a href="https://www.microsoft.com/research/">研究</a></li>
+                        </ul>
+                        <ul>
+                            <li class="nav2_menu2_submenu">开发人员与IT</li>
+                            <li><a href="https://docs.microsoft.com/zh-cn/">文档</a></li>
+                            <li><a href="https://technet.microsoft.com/zh-cn/ms376608.aspx">TechNet</a></li>
+                            <li><a href="https://msdn.microsoft.com/zh-cn">开发人员网络</a></li>
+                            <li><a href="https://developer.microsoft.com/zh-cn/windows">windows 开发人员中心</a></li>
+                            <li><a href="https://www.microsoft.com/zh-cn/itpro/windows">Windows IT Pro Center </a></li>
+                            <li><a href="https://fasttrack.microsoft.com/office">FastTrack</a></li>
+                        </ul>
+                        <ul>
+                            <li class="nav2_menu2_submenu">合作伙伴</li>
+                            <li><a href="https://partner.microsoft.com/">合作伙伴网络</a></li>
+                            <li><a href="https://www.microsoft.com/zh-cn/solution-providers">解决方案提供商</a></li>
+                            <li><a href="https://partnercenter.microsoft.com/partner/home">合作伙伴中心</a></li>
+                        </ul>
+                        <ul>
+                            <li class="nav2_menu2_submenu">行业</li>
+                            <li><a
+                                    href="https://www.microsoft.com/zh-cn/education?icid=CNavMSCOML0_Studentsandeducation">教育</a>
+                            </li>
+                            <li><a href="https://enterprise.microsoft.com/zh-cn">金融服务</a></li>
+                            <li><a href="https://enterprise.microsoft.com/zh-cn/uncategorized/government/">政府</a></li>
+                            <li><a href="https://enterprise.microsoft.com/zh-cn/uncategorized/health/">健康</a></li>
+                            <li><a
+                                    href="https://enterprise.microsoft.com/zh-cn/uncategorized/discrete-manufacturing/">制造业与资源</a>
+                            </li>
+                            <li><a
+                                    href="https://enterprise.microsoft.com/zh-cn/uncategorized/retail-and-consumer-goods/">零售</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="nav2_menu2_submenu">其他</li>
+                            <li><a href="https://www.microsoft.com/security/">安全性</a></li>
+                            <li><a href="https://www.microsoft.com/licensing/">许可</a></li>
+                            <li><a href="https://appsource.microsoft.com/">AppSource</a></li>
+                            <li><a href="https://azuremarketplace.microsoft.com/marketplace/">Azure Marketplace</a></li>
+                            <li><a href="https://events.microsoft.com/">活动</a></li>
+                            <li><a href="https://www.microsoft.com/zh-cn/surface/business/overview">Surface for
+                                    Business</a></li>
+                        </ul>
+                    </div>
+                    <div id="nav2_menu2_block">查看所有
+                        <img src="img/左箭头.png" class="nav2_menu2_block_img">
+                    </div>
+                </div>
+                <button type="button" class="button" id="search">搜索
+                    <img src="img/find.png" id="search_img1" width="20px" height="20px">
+                </button>
+                <button type="button" class="button">sign in </button>
+            </div>
+        </div>
+    </div>
+    <div id="main1">
+        <div id="main1_img1">
+            <img src="https://visualstudio.microsoft.com/wp-content/uploads/2018/04/microsoft-visual-studio.svg"
+                width="60px" height="60px">
+        </div>
+        <div id="main1_content">
+            <span class="main1_content_title">Visual Studio IDE</span>
+            <span class="main1_content_size">功能完备的集成开发环境 (IDE)<br>适用于 Android、iOS、Windows、Web 和云</span>
+            <div id="main1_content_button">
+                <button id="main1_content_button1" type="button">Windows</button>
+                <button id="main1_content_button2" type="button">macOS</button>
+            </div>
+            <div id="main1_content_part1">
+                <div>
+                    <button type="button" id="main1_content_download1">
+                        <span class="main1_part_title">下载Visual Studio</span>
+                        <img id="main1_img2" src="img/download.png">
+                    </button>
+                    <table id="download1_table">
+                        <tr>
+                            <th>
+                                <a
+                                    href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15">Community
+                                    2017</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <a
+                                    href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15">Professional
+                                    2017</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <a
+                                    href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15">Enterprise
+                                    2017</a>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="main1_img3">
+                    <img src="img/vision.png" width="1100px" height="520px">
+                </div>
+            </div>
+            <div id="main1_content_part2">
+                <div>
+                    <button type="button" id="main1_content_download2">
+                        <span class="main1_part_title">下载 Visual Studio for Mac</span>
+                        <img id="main1_img4" class="main1_img4" src="img/download.png">
+                    </button>
+                    <table id="download2_table">
+                        <tr>
+                            <th>
+                                <a
+                                    href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15">Community
+                                    2017 for Mac</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <a
+                                    href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15">Professional
+                                    2017 for Mac</a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <a
+                                    href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15">Enterprise
+                                    2017 for Mac</a>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="main1_img3">
+                    <img src="img/Apple.png" width="1100px" height="520px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main2_part1" class="main2">
+        <span class="main2_title">Visual Studio 新增功能</span>
+        <div class="left">
+            <img src="img/left.png">
+            <span class="main2_size1">Visual Studio<br> 2017</span>
+            <span class="main2_size2">功能完备的 IDE，可提<br>高任何应用的工作效<br>率</span>
+        </div>
+        <div class="center">
+            <img src="img/middle.png">
+            <span class="main2_size1">Visual Studio for<br> Mac</span>
+            <span class="main2_size2">移动优先和云优先<br>IDE。 专为 Mac 而打<br>造</span>
+        </div>
+        <div class="right1">
+            <img src="img/right.png">
+            <span class="main2_size1">Visual Studio <br>2017 Preview</span>
+            <span class="main2_size2">获取 Visual Studio 2017<br> 中尚未引入的最新功<br>能</span>
+        </div>
+    </div>
+    <div id="main2_part2" class="main2">
+        <span class="main2_title">Visual Studio 新增功能</span>
+        <div class="left">
+            <img src="img/left.png">
+            <span class="main2_size3">Visual Studio 2017</span>
+            <span class="main2_size4">功能完备的 IDE，可提高任何应用的工作效率</span>
+        </div>
+        <div id="right2">
+            <img src="img/middle.png">
+            <span class="main2_size3">Visual Studio for Mac</span>
+            <span class="main2_size4">移动优先和云优先IDE。 专为 Mac 而打造</span>
+        </div>
+    </div>
+    <div id="main3_part1" class="main3">
+        <div class="main3_tab_list">
+            <button type="button" id="list1_button1">开发</button>
+            <button type="button">Debug</button>
+            <button type="button">测试</button>
+            <button type="button">协作</button>
+            <button type="button">扩展</button>
+        </div>
+        <div class="main3_line"></div>
+        <div class="main3_tab_content">
+            <div id="main3_part1_div1">
+                <h1>快速导航、编写并修复你的代码</h1>
+                <p>Visual Studio 使你能够准确、高效地编写代码，并且不会丢失当前的文件上下文。 你可以<br>
+                    轻松地放大到详细信息，例如调用结构、相关函数、签入和测试状态。 还可以利用我们的<br>
+                    功能来重构、识别和修复代码问题。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/one.png">
+            </div>
+            <div>
+                <h1>轻松调试、探查和诊断</h1>
+                <p>使用 Visual Studio 调试程序，通过代码的历史数据可跨语言快速查找并修复 bug，无论是<br>
+                    在本地还是远程。 利用分析工具发现并诊断性能问题，无需离开调试工作流。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/two.png">
+            </div>
+            <div>
+                <h1>使用全面的测试工具编写高质量代码</h1>
+                <p>Visual Studio 测试工具帮助你交付高质量的软件。 使用这些工具规划、执行和监视你的全<br>
+                    部测试工作。 通过质量指标、指标和全面的测试状态报告来掌握你的测试规划。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/three.png">
+            </div>
+            <div>
+                <h1>使用版本控制、提供敏捷性、高效协作</h1>
+                <p>在任意提供商（包括 GitHub）托管的 Git 存储库中管理你的源代码。 也可以使用 Azure <br>
+                    DevOps 管理整个项目的代码、bug 和工作项。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/four.png">
+            </div>
+            <div>
+                <h1>自定义 Visual Studio</h1>
+                <p>通过利用 Microsoft、合作伙伴和社区提供的工具、控件和模板，扩展 Visual Studio 功<br>
+                    能。 通过构建你自己的扩展来根据你的喜好进行进一步操作和自定义。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/five.png">
+            </div>
+        </div>
+    </div>
+    <div id="main3_part2" class="main3">
+        <div id="main3_tab_list2" class="main3_tab_list">
+            <button type="button" id="list2_button1">开发</button>
+            <button type="button">Debug</button>
+            <button type="button">测试</button>
+            <button type="button">协作</button>
+        </div>
+        <div class="main3_line"></div>
+        <div class="main3_tab_content">
+            <div id="main3_part2_div1">
+                <h1>快速导航、编写并修复你的代码</h1>
+                <p>Visual Studio 使你能够准确、高效地编写代码，并且不会丢失当前的文件上下文。 你可以<br>
+                    轻松地放大到详细信息，例如调用结构、相关函数、签入和测试状态。 还可以利用我们的<br>
+                    功能来重构、识别和修复代码问题。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/one.png">
+            </div>
+            <div>
+                <h1>轻松调试、探查和诊断</h1>
+                <p>使用 Visual Studio 调试程序，通过代码的历史数据可跨语言快速查找并修复 bug，无论是<br>
+                    在本地还是远程。 利用分析工具发现并诊断性能问题，无需离开调试工作流。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/two.png">
+            </div>
+            <div>
+                <h1>使用全面的测试工具编写高质量代码</h1>
+                <p>Visual Studio 测试工具帮助你交付高质量的软件。 使用这些工具规划、执行和监视你的全<br>
+                    部测试工作。 通过质量指标、指标和全面的测试状态报告来掌握你的测试规划。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/three.png">
+            </div>
+            <div>
+                <h1>使用版本控制、提供敏捷性、高效协作</h1>
+                <p>在任意提供商（包括 GitHub）托管的 Git 存储库中管理你的源代码。 也可以使用 Azure <br>
+                    DevOps 管理整个项目的代码、bug 和工作项。<br>
+                    <span>了解更多
+                        <img class="main3_div_img1" src="img/左箭头.png">
+                    </span>
+                </p>
+                <img class="main3_div_img2" src="img/four.png">
+            </div>
+        </div>
+    </div>
+    <div id="main4_part1" class="main4">
+        <div class="main4_title">你想要构建什么？</div>
+        <div class="main4_content">
+            <div class="main4_row1">
+                <div>
+                    <span>Windows</span>
+                    <p>开发应用和游戏以覆盖运行<br> Windows 的所有设备</p>
+                    <img src="img/Windows.png" width="90px" height="90px">
+                </div>
+                <div>
+                    <span>移动应用程序</span>
+                    <p>创建面向 Android、iOS<br> 和 Windows 的本机或混<br>合应用</p>
+                    <img src="img/移动应用程序.png" width="90px" height="90px">
+                </div>
+                <div>
+                    <span>Azure 应用</span>
+                    <p>生成、管理和部署可缩放<br>到 Azure 的云应用</p>
+                    <img src="img/azure.png" width="90px" height="90px">
+                </div>
+            </div>
+            <div class="main4_row2">
+                <div>
+                    <span>Web 应用</span>
+                    <p>使用功能强大的开放式工<br>具和可扩展生态系统开发<br>新式 Web 应用</p>
+                    <img src="img/Web 应用.png" width="90px" height="90px">
+                </div>
+                <div>
+                    <span>Office</span>
+                    <p>使用各种工具执行所有类<br>型的 Office 开发</p>
+                    <img src="img/office.png" width="90px" height="90px">
+                </div>
+                <div>
+                    <span>游戏</span>
+                    <p>使用顶尖的引擎和框架创<br>建跨平台游戏</p>
+                    <img src="img/游戏.png" width="90px" height="90px">
+                </div>
+            </div>
+            <div class="main4_row3">
+                <div>
+                    <span>扩展</span>
+                    <p>编写自己的 Visual Studio<br>扩展</p>
+                    <img src="img/扩展.png" width="90px" height="90px">
+                </div>
+                <div>
+                    <span>Database（数据库）</span>
+                    <p>轻松开发和部署 SQL<br> Server 和 Azure SQL 数据<br>库</p>
+                    <img src="img/数据库.png" width="90px" height="90px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main4_part2" class="main4">
+        <div class="main4_title">你想要构建什么？</div>
+        <div class="main4_content">
+            <div class="main4_row1">
+                <div>
+                    <span>移动应用程序</span>
+                    <p>创建定目标到 Android<br> 和 iOS 的跨平台应用</p>
+                    <img src="img/移动应用程序.png" width="100px" height="85px">
+                </div>
+                <div>
+                    <span>Azure 应用</span>
+                    <p>生成、管理和部署可缩放<br>到 Azure 的云应用</p>
+                    <img src="https://visualstudio.microsoft.com/wp-content/uploads/2017/09/brand-azure-2x.png"
+                        width="75px" height="75px">
+                </div>
+                <div>
+                    <span>Web 应用</span>
+                    <p>使用 ASP.NET Core 开发<br>新式 Web 应用</p>
+                    <img src="img/Web 应用.png" width="90px" height="85px">
+                </div>
+            </div>
+            <div class="main4_row2">
+                <div>
+                    <span>macOS</span>
+                    <p>使用 C# 和 F# 开发适用<br>于 Mac 的应用和游戏</p>
+                    <img src="img/macOS.png" width="90px" height="90px">
+                </div>
+                <div>
+                    <span>游戏</span>
+                    <p>使用 Unity 创建跨平台游<br>戏</p>
+                    <img src="img/游戏.png" width="85px" height="90px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main5">
+        <div id="main5_content">
+            <div class="main5_content">
+                <span>Visual Studio Community 2017</span>
+                <p>Free, fully-featured IDE for students, open-<br>source and individual developers</p>
+                <button type="button" class="main5_button" id="main5_button1">
+                    <span>Free download</span>
+                    <img src="img/download.png">
+                </button>
+            </div>
+            <div class="main5_content">
+                <span>Visual Studio Professional 2017</span>
+                <p>Professional developer tools, services, and<br>subscription benefits for small teams</p>
+                <button type="button" class="main5_button">
+                    <span>Free trial</span>
+                    <img src="img/download.png">
+                </button>
+            </div>
+            <div class="main5_content">
+                <span>Visual Studio Enterprise 2017</span>
+                <p>End-to-end solution to meet demanding<br>quality and scale needs of teams of all sizes</p>
+                <button type="button" class="main5_button">
+                    <span>Free trial</span>
+                    <img src="img/download.png">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="main6">
+        <div id="main6_content">
+            <ul>
+                <li class="main6_size"><a href="#">新增内容</a></li>
+                <li><a href="#">全新 Surface Pro 6</a></li>
+                <li><a href="#">全新 Surface Laptop 2</a></li>
+                <li><a href="#">全新 Surface Go </a></li>
+                <li><a href="#">Xbox One X</a></li>
+                <li><a href="#">Xbox One S</a></li>
+                <li><a href="#">Windows 10 应用程序</a></li>
+            </ul>
+            <ul>
+                <li class="main6_size"><a href="#">应用商店和支持</a></li>
+                <li><a href="#">帐户个人资料</a></li>
+                <li><a href="#">下载中心</a></li>
+                <li><a href="#">订单跟踪</a></li>
+                <li><a href="#">支持</a></li>
+            </ul>
+            <ul>
+                <li class="main6_size"><a href="#">教育</a></li>
+                <li><a href="#">Microsoft 教育领域</a></li>
+                <li><a href="#">适合学生的 Office</a></li>
+                <li><a href="#">适用于学校的 Office 365</a></li>
+                <li><a href="#">Microsoft Azure 教育领域</a></li>
+            </ul>
+            <ul>
+                <li class="main6_size"><a href="#">企业</a></li>
+                <li><a href="#">企业</a></li>
+                <li><a href="#">数据平台</a></li>
+                <li><a href="#">查找解决方案提供商</a></li>
+                <li><a href="#">Microsoft 合作伙伴资源</a></li>
+                <li><a href="#">Microsoft AppSource </a></li>
+                <li><a href="#">制造业与资源</a></li>
+                <li><a href="#">金融服务</a></li>
+            </ul>
+            <ul>
+                <li class="main6_size"><a href="#">开发人员</a></li>
+                <li><a href="#">Microsoft Visual Studio</a></li>
+                <li><a href="#">Windows 开发人员中心</a></li>
+                <li><a href="#">开发人员网络</a></li>
+                <li><a href="#">TechNet</a></li>
+                <li><a href="#">Microsoft 开发人员计划</a></li>
+                <li><a href="#">通道 9</a></li>
+                <li><a href="#">Office 开发人员中心</a></li>
+            </ul>
+            <ul>
+                <li class="main6_size"><a href="#">公司</a></li>
+                <li><a href="#">招贤纳士</a></li>
+                <li><a href="#">关于 Microsoft</a></li>
+                <li><a href="#">公司新闻</a></li>
+                <li><a href="#">Microsoft 隐私</a></li>
+                <li><a href="#">投资人</a></li>
+                <li><a href="#">安全性</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <img src="img/ball.png">
+            <span onclick="language()">chinese,simplified,(简体中文)</span>
+            <div id="language">
+                <ul>
+                    <li>英语</li>
+                    <li>简体中文</li>
+                    <li>繁体中文</li>
+                    <li>法语</li>
+                    <li>韩语</li>
+                    <li>西班牙语</li>
+                    <li>俄语</li>
+                    <li>阿拉伯语</li>
+                    <li>葡萄牙语</li>
+                    <li>德语</li>
+                    <li>北印度语</li>
+                    <li>孟加拉语</li>
+                    <li>日语</li>
+                    <li>意大利语</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="footer_ul">
+            <li><a href="#">请联系我们 </a></li>
+            <li><a href="#"> 隐私 & Cookie </a></li>
+            <li><a href="#">使用条款</a></li>
+            <li><a href="#">商标</a></li>
+            <li><a href="#">关于我们的广告</a></li>
+        </ul>
+        <span><a href="#">© Microsoft 2018</a></span>
+    </div>
+    <div id="backtop"></div>
+    <script type="text/javascript" src="vs.js"></script>
+</body>
+
+</html>
