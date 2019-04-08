@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Products | Parallax</title>
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" type="text/css" href="Products.css">
+</head>
+
+<body>
+    <div id="page1">
+        <!-- 划线，固定线的位置 -->
+        <div id="line"></div>
+        <!-- 头部的一些代码 -->
+        <div id="header">
+            <ul id="header-nav">
+                <div class="nav-li">
+                    <li>Work</li>
+                    <div class="go-ahead"></div>
+                </div>
+                <div class="nav-li">
+                    <li>Expertise</li>
+                    <div class="go-ahead"></div>
+                </div>
+                <div class="nav-li">
+                    <li>About</li>
+                    <div class="go-ahead"></div>
+                </div>
+                <div class="nav-li">
+                    <li>Blog</li>
+                    <div class="go-ahead"></div>
+                </div>
+                <div class="nav-li" id="nav-li">
+                    <li>Products</li>
+                    <div class="go-ahead"></div>
+                </div>
+                <div class="nav-li">
+                    <li>Careers</li>
+                    <div class="go-ahead"></div>
+                </div>
+                <img src="picture/@5.png" alt="@5" width="28px" height="28px">
+                <div class="nav-li">
+                    <li>Events</li>
+                    <div class="go-ahead"></div>
+                </div>
+                <li id="li-end">Contact
+                    <div id="box"></div>
+                </li>
+            </ul>
+            <div id="underline"></div>
+        </div>
+        <!-- 最左边的几个图像 -->
+        <div id="left-img">
+            <img src="picture/left-img.png" alt="left-img" height="180px" width="30px">
+        </div>
+        <div id="left-logo">
+            <div><img src="picture/left-1.png" id="logo1" alt="left-1" width="25px" height="25px"></div>
+            <div><img src="picture/left-2.png" alt="left-2" width="25px" height="25px"></div>
+            <div><img src="picture/left-3.png" alt="left-3" width="25px" height="25px"></div>
+            <div><img src="picture/left-4.png" alt="left-4" width="25px" height="25px"></div>
+        </div>
+        <canvas id="myCanvas1" class="canvas" width="40px" height="40px">当前浏览器不支持canvas组件请升级！</canvas>
+        <canvas id="myCanvas2" class="canvas" width="40px" height="40px">当前浏览器不支持canvas组件请升级！</canvas>
+        <canvas id="myCanvas3" class="canvas" width="40px" height="40px">当前浏览器不支持canvas组件请升级！</canvas>
+        <canvas id="myCanvas4" class="canvas" width="50px" height="50px">当前浏览器不支持canvas组件请升级！</canvas>
+        <!-- 中间的主要几个标题 -->
+        <div id="main-title">
+            <p onmouseover="imgChange()">—— Expose</p>
+            <p>—— jsPDF</p>
+            <p>—— BaySentry</p>
+            <p>—— vtop</p>
+        </div>
+        <!-- 中间会随向下滑动页面的速度而滚动变化的图像 -->
+        <div id="main-img">
+            <div></div>
+        </div>
+        <!-- 四张有变化的图片 -->
+        <div id="main-picture">
+            <div class="prcture-content">
+                <img id="img1" class="img1" src="https://parallax-test-2.imgix.net/uploads/download/20161220143400_expose.png?auto=format%252Ccompress&w=1370&h=900&ixlib=imgixjs-3.0.4"
+                    alt="first">
+                <div class="div1">
+                    <p class="p-first">Expose</p>
+                    <p class="p-second">Our beautiful,soon-to-be open source CMS </p>
+                    <p class="p-third">→</p>
+                </div>
+            </div>
+            <div class="prcture-content">
+                <img id="img2" src="https://parallax-test-2.imgix.net/uploads/download/20161220144443_jspdf.png?auto=format%252Ccompress&w=1370&h=900&ixlib=imgixjs-3.0.4"
+                    alt="second">
+                <div class="div1">
+                    <p class="p-first">jsPDF</p>
+                    <p class="p-second">World's first HTML5 PDF generator</p>
+                    <p class="p-third">→</p>
+                </div>
+            </div>
+            <div class="prcture-content">
+                <img id="img3" src="https://parallax-test-2.imgix.net/uploads/download/20161220144253_baysentry.png?auto=format%252Ccompress&w=1370&h=900&ixlib=imgixjs-3.0.4"
+                    alt="third">
+                <div class="div1">
+                    <p class="p-first">BaySentry</p>
+                    <p class="p-second">Car paking management made easy </p>
+                    <p class="p-third">→</p>
+                </div>
+            </div>
+            <div class="prcture-content">
+                <img id="img4" src="https://parallax-test-2.imgix.net/uploads/download/20161220144157_vtop.png?auto=format%252Ccompress&w=1370&h=900&ixlib=imgixjs-3.0.4"
+                    alt="forth">
+                <div class="div1">
+                    <p class="p-first">vtop</p>
+                    <p class="p-second">Visual monitoring for the command-line</p>
+                    <p class="p-third">→</p>
+                </div>
+            </div>
+        </div>
+        <!-- 竖着的文字 -->
+        <span id="span">—— info@pa</span>
+        <!-- 最后可以旋转和变色的图片，十分的男 -->
+        <div id="turn-picture1" class="turn-picture">
+            <img src="picture/旋转.gif" alt="change-picture1">
+        </div>
+        <div id="turn-picture2" class="turn-picture">
+            <img src="picture/旋转后.gif" alt="change-picture2">
+        </div>
+
+        <!-- 最右边的固定的标题 -->
+        <div id="right-nav">
+            <ul>
+                <li>Work —</li>
+                <li>Expertise —</li>
+                <li>About —</li>
+                <li>Blog —</li>
+                <li>Products —</li>
+                <li>Careers —</li>
+                <li>Events —</li>
+                <li>Contact —</li>
+            </ul>
+        </div>
+    </div>
+    <div id="page2"></div>
+    <div id="page3">
+        <div id="words"><img src="picture/旋转.gif" width="180px" height="180px">
+            <span>All in.leeds.</span>
+        </div>
+        <div id="page3-left" class="page3-content"></div>
+        <div id="page3-middle" class="page3-content"></div>
+        <div id="page3-right" class="page3-content"></div>
+    </div>
+    </div>
+    <div id="page4">
+        <div id="page4-left">
+            <div id="page4-content">
+                <div id="page4-title">
+                    <img src="picture/旋转.gif" width="100px" height="100px">
+                    <span>All in.leeds.</span>
+                </div>
+                <div id="title-content1">
+                    <span>We are a collective of Leeds agencies. We span creative, digital, PR and media.<br>
+                        We're working together to drive our sector, and our city, forward. For the good of<br>
+                        us all. We are All In.
+                    </span>
+                </div>
+                <div id="title-content2">
+                    <P> Thrilled doesn't quite cover it.<br> Cock-a-hoop doesn't come close.<br> Safe to say we're over
+                        the
+                        moon. </P>
+                    <P> We came into this with nothing.<br> And we're leaving with everything. </P>
+                    <P> So here's to our future.<br> The excitement that lies ahead. </P>
+                    <p> Just promise us one thing… <br>Let's be fearless. </p>
+                    <p> Thank you, Channel 4, for choosing Leeds.</p>
+                </div>
+                <div id="title-content3">
+                    <img src="picture/旋转.gif" width="70px" height="70px">
+                    <span>All in.leeds.</span>
+                    <p>(a collective of Leeds agencies)</p>
+                </div>
+                <div id="title-content4">
+                    <span>Visit allinleeds.com</span>
+                </div>
+            </div>
+        </div>
+        <div id="page4-right">
+            <span>×</span>
+        </div>
+    </div>
+</body>
+<!-- 引入js文件 -->
+<script type="text/javascript" src="Products.js"></script>
+
+</html>
